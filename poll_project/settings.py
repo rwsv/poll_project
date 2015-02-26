@@ -133,6 +133,12 @@ INSTALLED_APPS = (
     'polls',
 )
 
+JENKINS_TASKS = (
+    'django_jenkins.tasks.run_pep8',
+    'django_jenkins.tasks.run_pylint',
+    'django_jenkins.tasks.run_pyflakes',
+)
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
